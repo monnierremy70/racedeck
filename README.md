@@ -1,5 +1,5 @@
 RaceDeck
-Tableau de bord gratuit pour les DS et capitaines d'équipe sur Zwift.
+Tableau de bord gratuit pour Zwift.
 Écarts, groupes, puissance, parcours et TTT en direct, dans des modules flottants au-dessus de Zwift, sur ton téléphone ou dans OBS.
 ![Dernière version](https://img.shields.io/github/v/release/monnierremy70/racedeck?label=version&color=3d8bff)
 ![Windows](https://img.shields.io/badge/Windows-10%20%2F%2011-0078d4)
