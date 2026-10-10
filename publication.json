@@ -1,0 +1,4 @@
+{
+  "manifestUrl": "https://github.com/monnierremy70/racedeck/releases/latest/download/racedeck-update.json",
+  "downloadUrl": "https://github.com/monnierremy70/racedeck/releases/download/v{version}/"
+}
