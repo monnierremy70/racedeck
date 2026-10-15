@@ -1,81 +1,95 @@
-RaceDeck
-Tableau de bord gratuit pour Zwift.
-Écarts, groupes, puissance, parcours et TTT en direct, dans des modules flottants au-dessus de Zwift, sur ton téléphone ou dans OBS.
-![Dernière version](https://img.shields.io/github/v/release/monnierremy70/racedeck?label=version&color=3d8bff)
+<div align="center">
+
+# RaceDeck
+
+**Le tableau de bord gratuit des DS sur Zwift.**
+Tes coureurs, les écarts, la puissance et le parcours en direct, au-dessus de Zwift.
+
+[![Dernière version](https://img.shields.io/github/v/release/monnierremy70/racedeck?label=version&color=3d8bff)](https://github.com/monnierremy70/racedeck/releases/latest)
 ![Windows](https://img.shields.io/badge/Windows-10%20%2F%2011-0078d4)
 ![Licence](https://img.shields.io/badge/licence-GPL--3.0-green)
-> 🧪 **Version de test privée** : RaceDeck s'active avec une clé gratuite, une clé par PC. Voir [Activation](#-activation).
+
+<img src="docs/carte-3d.gif" width="600" alt="Carte 3D de RaceDeck">
+
+</div>
+
 ---
-✨ Ce que fait RaceDeck
-RaceDeck affiche en direct ce qui se passe autour du coureur que tu suis. Il lit seulement les données de course : il ne modifie rien dans Zwift et ne pilote rien.
-Module	Ce qu'il affiche
-Coureurs autour	écarts en secondes et en mètres, W/kg, watts, FC, cadence, aspiration
-Coureur suivi	carte du coureur : puissance, FC, vitesse, groupes devant et derrière
-Groupes	écart entre les groupes, taille, W/kg moyen, coureurs de ton équipe
-Équipe / Pen	tes coureurs et le classement du pen, avec l'écart au 1er
-TTT équipe	tes coureurs côte à côte : écart, watts ou W/kg, aspi, FC, moyenne de course et sur 20 min
-Stats puissance	meilleurs efforts 5 s → 1 h en barres, et moyenne de la course
-Parcours / Parcours +	km restants, D+ restant, profil coloré selon la pente, KOM et sprints à venir, zoom sur les montées avec le % de chaque tronçon
-Et aussi :
-🪟 Modules flottants au-dessus de Zwift : déplaçables, redimensionnables, verrouillables (les clics passent alors à Zwift)
-📱 Téléphone et tablette : tous les modules en plein écran sur le même Wi-Fi (pratique sur Apple TV)
-🎥 Overlay pour OBS : une adresse par module, à ajouter comme source navigateur
-🔄 Mises à jour automatiques, signées : tes réglages sont conservés
-🧩 Mods : ajoute tes propres modules avec un simple fichier .zip
-🇫🇷 🇬🇧 Français et anglais
+
+## 🗺️ La Carte 3D
+
+Une mini-carte à la place de celle de Zwift : le parcours en relief, coloré selon la pente, tes coureurs et la tête du pen, les sprints et KOM qui arrivent.
+Molette pour zoomer, glisser pour déplacer, clic droit pour tourner, bouton **2D / 3D**.
+
+| Suivi du coureur | Vue du dessus | Tout le parcours |
+|:---:|:---:|:---:|
+| <img src="docs/carte-suivi-3d.png" width="280"> | <img src="docs/carte-dessus.png" width="280"> | <img src="docs/carte-parcours.png" width="280"> |
+
+## 🪟 Des modules au-dessus de Zwift
+
+Chaque module est une petite fenêtre transparente que tu places où tu veux. Cadenas fermé : les clics passent à Zwift.
+
+<img src="docs/modules.png" alt="Modules RaceDeck au-dessus de Zwift">
+
+**Coureurs autour** · **Compteur** · **Équipe** · **Favoris** · **Stats puissance** (avec FTP 95 %) · **Carte 3D** · **Parcours** · **Écarts TV** · **Groupes** · **Alertes DS**
+
+## 🖥️ L'application
+
+<img src="docs/a-proximite.png" alt="Onglet À proximité">
+
+- **À proximité** : tous les coureurs autour, ☆ pour tes favoris, clic sur un nom pour sa fiche
+- **Stats remises à zéro au départ** : l'échauffement dans le sas ne compte pas
+- **6 thèmes** de couleur, en français et en anglais
+- **Téléphone, tablette et OBS** : chaque module a son adresse
+- **Mises à jour automatiques** et **mods** à installer en .zip
+
+<details>
+<summary>🎨 Voir les thèmes</summary>
+<br>
+<img src="docs/themes.png" alt="Thèmes de RaceDeck">
+</details>
+
 ---
-📋 Ce qu'il te faut
-Un PC Windows 10 ou 11. Zwift peut tourner ailleurs : sur ce PC, une Apple TV, une tablette…
-Un second compte Zwift « observateur » : gratuit, il suffit d'une autre adresse e-mail. Il sert uniquement à lire les données de course. Ne l'utilise pas dans Zwift en même temps.
-L'ID Zwift du coureur à suivre : c'est le nombre dans l'adresse de son profil ZwiftPower (`…profile.php?z=123456`).
+
+## 📥 Installation
+
+1. Télécharge **`RaceDeck-x.y.z-Windows.zip`** dans la [dernière version](https://github.com/monnierremy70/racedeck/releases/latest).
+2. **Clic droit → Extraire tout**, puis lance **`RaceDeck.exe`**.
+3. Au premier lancement, fais ta **demande de clé** (gratuite, une par PC) et colle la clé reçue.
+
+> Si Windows affiche « Windows a protégé votre ordinateur » : **Informations complémentaires → Exécuter quand même**.
+
+**Il te faut :** un PC Windows 10 ou 11, un **second compte Zwift « observateur »** (gratuit, une autre adresse e-mail) et l'**ID Zwift** du coureur à suivre (le nombre dans l'adresse de son profil ZwiftPower).
+
+Pour essayer sans course : **Configuration → Connexion → Mode démo**.
+
+<details>
+<summary>❓ Questions fréquentes</summary>
+
+- **« Session en conflit »** : le compte observateur est ouvert ailleurs (Zwift, Companion…). Ferme-le.
+- **Le téléphone n'ouvre pas la page** : même Wi-Fi que le PC (pas un Wi-Fi invité), et autorise RaceDeck dans le pare-feu.
+- **Un module bloqué ou introuvable** : clic droit sur l'icône RaceDeck près de l'horloge.
+- **Un bug, une idée** : Configuration → Aide et à propos.
+
+</details>
+
+<details>
+<summary>🔒 Confidentialité</summary>
+
+RaceDeck **lit seulement** les données de course avec le compte observateur : il ne pilote rien dans Zwift.
+Le mot de passe n'est gardé que si tu coches « Rester connecté », chiffré par Windows, et n'est envoyé qu'à Zwift.
+Les mises à jour sont signées.
+
+</details>
+
 ---
-📥 Installation
-Télécharge `RaceDeck-x.y.z-Windows.zip` dans la dernière version (rubrique Assets).
-Fais un clic droit → Extraire tout, par exemple dans `Documents\RaceDeck`.
-Lance `RaceDeck.exe`. Un raccourci est créé sur le Bureau.
-> ⚠️ Si Windows affiche **« Windows a protégé votre ordinateur »**, clique sur **Informations complémentaires → Exécuter quand même**. L'application n'est pas signée par un éditeur connu, c'est normal.
-Pas besoin de Node.js ni d'installation supplémentaire.
----
-🔑 Activation
-Au premier lancement, RaceDeck demande une clé d'activation gratuite :
-Indique ton prénom, nom et e-mail, puis clique sur Créer ma demande.
-Envoie le code de demande par e-mail : le bouton Envoyer par e-mail prépare le message, sinon copie le code et l'adresse affichés.
-Colle la clé reçue, puis clique sur Activer RaceDeck.
-La clé ne fonctionne que sur ton PC. Nouveau PC ou Windows réinstallé ? Refais simplement une demande.
----
-🚀 Premiers pas
-Configuration → Connexion : ID Zwift du coureur à suivre, puis e-mail et mot de passe du compte observateur. Coche Rester connecté, puis Se connecter.
-Configuration → Équipe : indique le tag de ton équipe (par exemple `BIKES`) pour mettre tes coureurs en couleur.
-Modules → Nouveau module : ajoute ce que tu veux. Clique sur le cadenas du module pour le déplacer au-dessus de Zwift, puis referme-le.
-TTT : dans l'onglet Course, coche ★ devant tes coureurs pour les afficher dans le module TTT équipe.
-💡 Pas de course en cours ? Le mode démo te permet de tout essayer avec de faux coureurs.
-📱 Sur téléphone ou tablette
-Configuration → Fenêtre et réseau : coche l'accès depuis le Wi-Fi, puis redémarre RaceDeck. Scanne le QR code affiché avec ton téléphone, puis va dans Modules → Ouvrir.
-Le téléphone doit être sur la même box que le PC. Si Windows demande l'autorisation du pare-feu, choisis Réseaux privés → Autoriser.
-🎥 Dans OBS
-Modules → copie l'adresse OBS du module → dans OBS, Source → Navigateur, puis colle l'adresse.
----
-🔒 Confidentialité et sécurité
-RaceDeck lit les données de course via le compte observateur. Il n'envoie rien à Zwift d'autre que la connexion de ce compte.
-Ton mot de passe n'est enregistré que si tu coches Rester connecté, chiffré par Windows sur ton PC. Il n'est envoyé qu'à Zwift.
-Les mises à jour sont signées : RaceDeck refuse toute version qui ne vient pas de l'auteur.
-Les mods tournent à part, en lecture seule : ils ne peuvent ni changer tes réglages, ni lire tes identifiants.
----
-❓ Questions fréquentes
-« Session en conflit » ? Le compte observateur est utilisé ailleurs en même temps (Zwift, Sauce for Zwift, un autre RaceDeck). Utilise un compte observateur réservé à RaceDeck.
-Le téléphone n'arrive pas à ouvrir la page ? Vérifie que l'accès depuis le Wi-Fi est coché, que RaceDeck a bien été redémarré, que le pare-feu Windows autorise RaceDeck sur les réseaux privés, et que le téléphone n'est pas sur un Wi-Fi invité.
-Une barre ou une fenêtre bloquée ? Clic droit sur l'icône RaceDeck près de l'horloge : tu peux tout verrouiller ou déverrouiller, masquer les modules, ou quitter.
-Un bug, une idée ? Dans l'application : Configuration → Contact → Signaler un bug.
----
-❤️ Soutenir
-RaceDeck est gratuit et le restera. Si l'outil te rend service, un don m'aide à continuer de le développer : onglet Dons dans l'application.
----
-📜 Licence et remerciements
-RaceDeck est un logiciel libre sous licence GNU GPL v3.
-Connexion aux données Zwift : Sauce for Zwift (Sauce, LLC, GPL-3.0)
-Données des routes et des segments : zwift-data (Andi Pätzold, MIT)
-Application : Electron (MIT)
-QR codes : QR Code Generator (Kazuhiko Arase, MIT)
-RaceDeck n'est ni affilié, ni approuvé, ni soutenu par Zwift, Inc. Zwift est une marque de Zwift, Inc.
----
-<sub>Créé par Rémy Monnier pour les DS de la communauté Zwift.</sub>
+
+<div align="center">
+
+**Gratuit** · un onglet **Dons** existe dans l'application pour soutenir le projet.
+
+Créé par **Rémy Monnier** · Team BIKES FRANCE
+Licence [GNU GPL v3](LICENSE) · Connexion Zwift d'après [Sauce for Zwift](https://github.com/SauceLLC/sauce4zwift) (GPL-3.0) · Routes [zwift-data](https://github.com/andipaetzold/zwift-data) (MIT) · Electron (MIT)
+
+<sub>RaceDeck n'est pas affilié à Zwift, Inc.</sub>
+
+</div>
